@@ -1,0 +1,48 @@
+/* Footer Style Start */
+
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .footer .container .row .col-lg-3 {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+body {
+  min-height: 100vh;
+}
+.footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .footer .container .row .col-lg-3 {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}

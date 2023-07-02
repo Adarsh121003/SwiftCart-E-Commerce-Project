@@ -1,0 +1,72 @@
+/* Header Style */
+#color {
+  background-color: #2875f0;
+}
+/* Blue background */
+/* Toggler Style Start */
+.custom-toggler .navbar-toggler-icon {
+  background-color: red;
+  border: black;
+}
+.navbar-toggler-icon {
+  color: red;
+}
+.navbar-toggler {
+  .navbar-toggler-icon {
+    background-image: none;
+  }
+
+  .navbar-toggler-icon::before {
+    font-family: FontAwesome;
+    content: "|||";
+  }
+}
+/* Toggler Style End */
+/* Customize the buttons */
+
+.btn,
+.nav-link {
+  border-radius: 10px;
+}
+
+/* Add hover effects to the buttons */
+.btn:hover,
+.nav-link:hover {
+  background-color: #17a2b8;
+  border-radius: 10px;
+  color: blueviolet;
+}
+
+/* Increase the size and color of the cart icon */
+.fa-shopping-cart {
+  font-size: 24px;
+  color: whitesmoke;
+}
+.search-btn {
+  background-color: whitesmoke;
+}
+@media (max-width: 991.98px) {
+  .custom-logo {
+    width: 15%;
+    height: 10%;
+  }
+
+  @media (min-width: 992px) {
+    .custom-logo {
+      width: 25%;
+      height: 25%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .search-btn {
+    margin-left: 105%;
+    margin-top: -32%;
+    background-color: whitesmoke;
+  }
+}
+/* Nav BackGround Color */
+#nav-color {
+  background-color: whitesmoke;
+}
+/* Header Style End */
