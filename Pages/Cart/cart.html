@@ -145,6 +145,13 @@
         </div>
       </div>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <div id="set">
       <div id="footer"></div>
     </div>
@@ -159,10 +166,17 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      $(document).ready(function () {
-        $("#header").load("../../Pages/Header-Footer/header.html");
-        $("#footer").load("../../Pages/Header-Footer/footer.html");
-      });
+      fetch("../Header-Footer/header.html")
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("header").innerHTML = html;
+        });
+      // Fetch and insert the footer
+      fetch("../Header-Footer/footer.html")
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("footer").innerHTML = html;
+        });
     </script>
     <script>
       // Add your JavaScript code here (if needed)

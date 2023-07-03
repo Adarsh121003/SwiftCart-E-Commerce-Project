@@ -14,14 +14,87 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <style>
+      /* Header Style */
 
-    <!-- Custom CSS file -->
-    <link rel="stylesheet" href="./header-style.css" />
+      /* Toggler Style Start */
+      .custom-toggler .navbar-toggler-icon {
+        background-color: red;
+        border: black;
+      }
+      .navbar-toggler-icon {
+        color: red;
+      }
+      .navbar-toggler {
+        .navbar-toggler-icon {
+          background-image: none;
+        }
+
+        .navbar-toggler-icon::before {
+          font-family: FontAwesome;
+          content: "|||";
+        }
+      }
+      /* Toggler Style End */
+      /* Customize the buttons */
+
+      .btn,
+      .nav-link {
+        border-radius: 10px;
+      }
+
+      /* Add hover effects to the buttons */
+      .btn:hover,
+      .nav-link:hover {
+        background-color: #17a2b8;
+        border-radius: 10px;
+        color: blueviolet;
+      }
+
+      /* Increase the size and color of the cart icon */
+      .fa-shopping-cart {
+        font-size: 24px;
+        color: whitesmoke;
+      }
+      .search-btn {
+        background-color: whitesmoke;
+      }
+      @media (max-width: 991.98px) {
+        .custom-logo {
+          width: 15%;
+          height: 10%;
+        }
+
+        @media (min-width: 992px) {
+          .custom-logo {
+            width: 25%;
+            height: 25%;
+          }
+        }
+      }
+      @media (min-width: 768px) {
+        .search-btn {
+          margin-left: 105%;
+          margin-top: -32%;
+          background-color: whitesmoke;
+        }
+      }
+      /* Nav BackGround Color */
+      #nav-color {
+        background-color: whitesmoke;
+      }
+      /* Header Style End */
+    </style>
   </head>
   <body>
-    <header id="color">
+    <!-- Header Style -->
+
+    <header>
       <!-- ====================  First Part Of the Header Start==============-->
-      <nav class="navbar navbar-expand-md bg-body-tertiary first-nav">
+      <nav
+        class="navbar navbar-expand-md first-nav"
+        style="background-color: #2875f0"
+      >
         <div class="container-fluid">
           <div class="custom-logo">
             <img
@@ -53,10 +126,7 @@
                     placeholder="Search"
                     aria-label="Search"
                   />
-                  <button
-                    class="btn btn-outline-primary search-btn justify-content-center"
-                    type="submit"
-                  >
+                  <button class="btn btn-light search-btn" type="submit">
                     Search
                   </button>
                 </form>
@@ -69,13 +139,13 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="../Login/login.html"
+                  href="../../Pages/Login/login.html"
                 >
                   <button class="btn btn-primary">Login</button>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../Cart/cart.html">
+                <a class="nav-link" href="../../Pages/Cart/cart.html">
                   <i class="fa fa-shopping-cart"></i>
                 </a>
               </li>
@@ -204,7 +274,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../Product-Pages/Kid/kids.html">
+              <a class="nav-link" hre="../../Product-Pages/Kid/kids.html">
                 Kids
               </a>
             </li>
@@ -217,8 +287,6 @@
         </div>
       </div>
     </nav>
-    <!-- =========Second Part Of Header Ends =========-->
-    <!-- Headers -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
