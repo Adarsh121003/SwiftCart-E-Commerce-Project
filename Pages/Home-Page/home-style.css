@@ -47,5 +47,14 @@
 /* Seconde Part Styling */
 .card img {
   width: 100%;
-  height: 500px;
+  height: 450px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+}
+section h4 {
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bolder;
 }
