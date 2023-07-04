@@ -97,54 +97,58 @@
           </div>
         </div>
         <!-- Second Part Of the cart page -->
+
         <div class="col-md-4">
           <!-- Summary card -->
-          <div class="card">
-            <div class="card-header">Summary</div>
-            <div class="card-body">
-              <!-- Use a row and two columns here -->
-              <div class="row">
-                <div class="col-6">
-                  <p>Product price:</p>
+          <div id="set">
+            <div class="card">
+              <div class="card-header">Summary</div>
+              <div class="card-body">
+                <!-- Use a row and two columns here -->
+                <div class="row">
+                  <div class="col-6">
+                    <p>Product price:</p>
+                  </div>
+                  <div class="col-6">
+                    <!-- Add text-right class here -->
+                    <p class="text-right">₹5800</p>
+                  </div>
                 </div>
-                <div class="col-6">
-                  <!-- Add text-right class here -->
-                  <p class="text-right">₹5800</p>
+                <!-- Use a row and two columns here -->
+                <div class="row">
+                  <div class="col-6">
+                    <p>Shipping:</p>
+                  </div>
+                  <div class="col-6">
+                    <!-- Add text-right class here -->
+                    <p class="text-right">₹200</p>
+                  </div>
                 </div>
+                <hr />
+                <!-- Use a row and two columns here -->
+                <div class="row">
+                  <div class="col-6">
+                    <p>Total:</p>
+                  </div>
+                  <div class="col-6">
+                    <!-- Add text-right class here -->
+                    <p class="text-right">₹6000</p>
+                  </div>
+                </div>
+                <!-- Add float-right class here -->
+                <button
+                  type="button"
+                  class="btn btn-primary d-flex justify-content-center mt-auto mx-lg-5 w-50"
+                >
+                  Checkout
+                </button>
               </div>
-              <!-- Use a row and two columns here -->
-              <div class="row">
-                <div class="col-6">
-                  <p>Shipping:</p>
-                </div>
-                <div class="col-6">
-                  <!-- Add text-right class here -->
-                  <p class="text-right">₹200</p>
-                </div>
-              </div>
-              <hr />
-              <!-- Use a row and two columns here -->
-              <div class="row">
-                <div class="col-6">
-                  <p>Total:</p>
-                </div>
-                <div class="col-6">
-                  <!-- Add text-right class here -->
-                  <p class="text-right">₹6000</p>
-                </div>
-              </div>
-              <!-- Add float-right class here -->
-              <button
-                type="button"
-                class="btn btn-primary d-flex justify-content-center mt-auto mx-lg-5 w-50"
-              >
-                Checkout
-              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Use multiple br to put footer down of the page -->
     <br />
     <br />
     <br />
@@ -165,6 +169,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- Dynamically Header Fotter Loaded -->
     <script>
       fetch("../Header-Footer/header.html")
         .then(response => response.text())
@@ -178,6 +183,7 @@
           document.getElementById("footer").innerHTML = html;
         });
     </script>
+    <!-- Script to increasing and decreasing the value through button -->
     <script>
       // Add your JavaScript code here (if needed)
       var minusButtons = document.querySelectorAll(".btn-secondary .fa-minus");
